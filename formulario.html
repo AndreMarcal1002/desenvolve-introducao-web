@@ -1,0 +1,74 @@
+<!-- Exercícios 7 - Formulários-->
+
+<!DOCTYPE html>
+<html>  
+    <head>
+        <title>Formulários</title>
+        <meta charset="utf-8">
+    </head>
+    <body> 
+        <header>
+            <h1>Formulário de pesquisa de satisfação em relação ao curso Desenvolve Bom Despacho</h1>
+            <h6>By blog do André Marçal</h6>
+            <br>
+        </header>
+        <main> 
+            <h1>Dados Pessoais</h1>
+            <form action="pagina_destino.html" method="POST">
+                <p>
+                    <label for="nome">Nome:</label>
+                    <input type="text" placeholder="Seu nome" id="nome"/>
+                </p>
+                <p>
+                    <label for="e-mail">E-mail:</label>
+                    <input type="email" placeholder="Seu e-mail" id="e-mail"/>
+                </p>
+                <p>
+                    <label for="telefone">Telefone:</label>
+                    <input type="number" placeholder="Telefone de Contato" id="telefone"/>
+                </p>
+                <br>
+                <p>
+                    Sexo:
+                    <input type="radio" id="radio11" name="sexo"/>
+                    <label for="radio11">Masculino</label>
+                    <input type="radio" id="radio12" name="sexo"/>
+                    <label for="radio12">Feminino</label>
+                    <input type="radio" id="radio13" name="sexo"/>
+                    <label for="radio13">Outros</label>
+                </p>
+                <p>
+                Estado Civil:
+                    <input type="radio" id="radio21" name="estadocivil"/>
+                    <label for="radio21">Casado</label>
+                    <input type="radio" id="radio22" name="estadocivil"/>
+                    <label for="radio22">Solteiro</label>
+                    <input type="radio" id="radio23" name="estadocivil"/>
+                    <label for="radio23">Outros</label>
+                </p>
+                <p>
+                    Avaliação do Curso Desenvolve:
+                    <select>
+                        <option></option>
+                        <option>Excelente</option>
+                        <option>Bom</option>
+                        <option>Regular</option>
+                        <option>Ruim</option>
+                        <option>Péssimo</option>
+                    </select>
+                </p>
+                <p>
+                    <input type="checkbox" id="autoriza"/>
+                    <label for="autoriza">Cliente autoriza compartilhar suas respostas com terceiros.</label>
+                </p>
+                <p>
+                    <input type="submit" value="Enviar"/>
+                </p>
+            </form>    
+        </main>
+    </body>
+    <foot>
+        <br>
+        <h5><em>Todos os direitos reservados para RC Consultoria.</em></h5>
+    </foot>
+</html>
