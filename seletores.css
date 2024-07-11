@@ -1,0 +1,27 @@
+/* arquivo: seletores.css */
+/* Parte 1 */
+a{
+    color: red;
+}
+a:hover{
+    color: lime;
+}
+/*  Parte 2 */
+p {
+    font-family: 'arial';
+}
+/* Estilização dos elementos */
+h1 + p {
+    color:blue;
+    font-weight: bold;
+}
+/* Parte 3 */
+.destaque {
+    font-family: 'arial';
+} 
+p.destaque {
+    font-weight: bold;
+}
+strong.destaque {
+    color: red;
+}
