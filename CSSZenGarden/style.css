@@ -5,6 +5,8 @@
 .Sabor-3-hex { color: #BF4904; }
 .destaque { color: #730202; } */
 
+a { color:blue}
+a:hover {color:rgb(195, 0, 255) }
 abbr {font-variant: small-caps;}
 aside ul { list-style-type: none; }
 aside ul li {
@@ -26,7 +28,7 @@ p {text-indent: 1em;}
 #design-archives { display: none; }
 #design-selection {
     position: absolute;
-    top: 510px;
+    top: 490px;
     left: 62%;
     padding-left: 1%;
     padding-right: 1%;
@@ -53,12 +55,26 @@ p {text-indent: 1em;}
     align-self: center;
 }
 .benefits p { flex-basis: 70%; }
+
+.design-selection li { 
+    border-top:red solid 1px; 
+    padding-top: 3px;
+}
+.design-selection li:last-of-type { 
+    border-bottom: red solid 1px;
+    padding-bottom: 3px;
+}
 .explanation {
     width: 60%;
     border-right: #400101 1px;
     padding-right: 2%;
 }
-.main p {line-height: 1.5;} 
+.main p { line-height: 1.5; } 
+.main p:first-of-type:first-letter { 
+    font-size: 3em;
+    font-family: serif;
+    float: left;
+ }
 .main footer { margin: 4%; }
 .main footer a {
     border: solid 2px;
