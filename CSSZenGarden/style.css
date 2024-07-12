@@ -40,6 +40,21 @@ abbr {font-variant: small-caps;}
     padding: 0.5px;
     display: inline-block;
 }
+#design-selection {
+    position: absolute;
+    top: 560px;
+    left: 62%;
+    padding-left: 1%;
+    padding-right: 1%;
+}
+.explanation {
+    width: 60%;
+    border-right: #400101 1px;
+    padding-right: 2%;
+}
+.page-wrapper {
+    position: relative;
+}
 
 aside ul {
     list-style-type: none;
