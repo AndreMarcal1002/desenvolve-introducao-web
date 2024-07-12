@@ -4,7 +4,20 @@
 .Sabor-2-hex { color: #F28E13; }
 .Sabor-3-hex { color: #BF4904; }
 .destaque { color: #730202; } */
-html {
+html { 
     background: #F2A413;
     color: #400101;
+    font-size: 18px;
+    font-family: Helvetica, sans-serif;
 }
+p { text-indent: 1em; }
+h1, h2, h3 {text-align: center;}
+h1 {font-size: 1.8rem; }
+h2 {font-size: 1.4rem; }
+h3 {font-size: 1.2rem; }
+abbr {font-variant: small-caps;}
+
+.summary {text-align: center;}
+.main p {line-height: 1.5;} 
+
+
