@@ -1,101 +1,111 @@
-/* Color Theme Swatches in Hex */
-/* .principal { color: #400101; }
-.fundo { color: #F2A413; }
-.Sabor-2-hex { color: #F28E13; }
-.Sabor-3-hex { color: #BF4904; }
-.destaque { color: #730202; } */
 
-a { color:blue}
-a:hover {color:rgb(195, 0, 255) }
-abbr {font-variant: small-caps;}
+a { color:blue }
+a:hover { color:rgb(195, 0, 255) }
+abbr { font-variant: small-caps; }
 aside ul { list-style-type: none; }
-aside ul li {
+aside ul li { 
     margin: 1em;
-    text-align: center; 
-}
-h1, h2, h3 {text-align: center;}
-h1 {font-size: 1.8rem; }
-h2 {font-size: 1.4rem; }
-h3 {font-size: 1.2rem; }
+    text-align: center; }
+h1, h2, h3 { text-align: center; }
+h1 { font-size: 1.8rem; }
+h2 { font-size: 1.4rem; }
+h3 { font-size: 1.2rem; }
 html { 
     background: #F2A413;
     color: #400101;
     font-size: 18px;
-    font-family: Helvetica, sans-serif;
-}
-p {text-indent: 1em;}
+    font-family: Helvetica, sans-serif; }
+p { text-indent: 1em; }
 
 #design-archives { display: none; }
-#design-selection {
+#design-selection { 
     position: absolute;
     top: 490px;
     left: 62%;
     padding-left: 1%;
-    padding-right: 1%;
-}
+    padding-right: 1%; }
 #zen-intro { height: 550px; }
-#zen-intro header {
+#zen-intro header { 
     background: #400101;
-    color:#F2A413
-}
-#zen-intro header h1 {
+    color:#F2A413; }
+#zen-intro header h1 { 
     margin-left: 1em;
-    margin-right: 1em;
-}
+    margin-right: 1em; }
 #zen-intro header h1, #zen-intro header h2 { display: inline-block; }
 
-.benefits {
+.benefits { 
     display: flex;
     border-top:#400101 solid 1px;
-    border-bottom: #400101 solid 1px;
-}
-.benefits h3 {
+    border-bottom: #400101 solid 1px; }
+.benefits h3 { 
     order: 2;
     flex-basis: 30%;
-    align-self: center;
-}
+    align-self: center; }
 .benefits p { flex-basis: 70%; }
 
 .design-selection li { 
     border-top:red solid 1px; 
-    padding-top: 3px;
-}
+    padding-top: 3px; }
 .design-selection li:last-of-type { 
     border-bottom: red solid 1px;
-    padding-bottom: 3px;
-}
-.explanation {
+    padding-bottom: 3px; }
+.explanation { 
     width: 60%;
     border-right: #400101 1px;
-    padding-right: 2%;
-}
+    padding-right: 2%; }
 .main p { line-height: 1.5; } 
 .main p:first-of-type:first-letter { 
     font-size: 3em;
     font-family: serif;
-    float: left;
- }
+    float: left; }
 .main footer { margin: 4%; }
-.main footer a {
+.main footer a { 
     border: solid 2px;
     padding: 0.5px;
-    display: inline-block;
-}
+    display: inline-block; }
 .page-wrapper { position: relative; }
-.page-wrapper {
+.page-wrapper { 
     width: 80%; 
     max-width: 1280px;
-    margin: auto;
-}
-.participation {
+    margin: auto; }
+.participation { 
     display: flex;
     flex-wrap: wrap;
-    border-top: #400101 solid 1px;
-}
+    border-top: #400101 solid 1px; }
 .participation h3, .participation p { flex-basis: 50%; }
 .participation h3 { align-self: center; }
-.supporting footer {
+.supporting footer { 
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-evenly; }
+.summary { text-align: center; }
+
+/* Ocorre erro em "@media screen and (max-width: 768px)" e "@media print" na parte "design-selection" que não joga as 
+informações de design para o final da página ao diminuir o tamanho da tela.
+exercício: Remova o reposicionamento do menu de design para que ele se encaixe no mesmo lugar de antes.*/
+
+@media screen and (max-width: 768px) { 
+    .design-selection { 
+        position: static;
+        width: 100%; }
+    .explanation { 
+        border-right: none;
+        width: 100%; }
+    .participation { flex-direction: column; }
+    p { text-indent: 0; }
+    #zen-intro { height: auto; } 
 }
-.summary {text-align: center;}
+
+@media print { 
+    html { font-family:'Times New Roman', Times, serif; }
+    #zen-intro header { 
+        background-color: white;
+        color: black; }
+    .design-selection { 
+        position: static;
+        width: 100%; }
+    .explanation { 
+        border-right: none;
+        width: 100%; } 
+}
+
+
