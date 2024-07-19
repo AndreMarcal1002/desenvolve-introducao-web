@@ -84,7 +84,7 @@ informações de design para o final da página ao diminuir o tamanho da tela.
 exercício: Remova o reposicionamento do menu de design para que ele se encaixe no mesmo lugar de antes.*/
 
 @media screen and (max-width: 768px) { 
-    .design-selection { 
+    #design-selection { 
         position: static;
         width: 100%; }
     .explanation { 
@@ -100,7 +100,7 @@ exercício: Remova o reposicionamento do menu de design para que ele se encaixe 
     #zen-intro header { 
         background-color: white;
         color: black; }
-    .design-selection { 
+    #design-selection { 
         position: static;
         width: 100%; }
     .explanation { 
