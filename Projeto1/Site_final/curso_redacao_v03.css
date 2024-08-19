@@ -1,0 +1,169 @@
+/* RedaçãodeSucesso.css */
+
+/*Estilização de aspectos gerais*/
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+footer{
+    border-bottom: solid 2px purple;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    border-bottom: 2px solid purple ;
+}
+
+/*Estilização das classes*/
+
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 5px 1px;
+    background-color: blueviolet;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 50px;
+}
+
+.developers{
+    flex-basis: content;
+    align-self: center;
+    margin: 10px;
+    padding: 10px;
+}
+
+.apresentacao{
+    align-content: space-between;
+}
+
+/* Acrescentado por ALMLS para organizar dimensões da foto */
+.container img{ max-width: 200px; }
+
+.socialmedia_1 img{
+    width: 40px;
+}
+
+
+.logo{
+    font-family: Arial;
+    font-size: 28px;
+    color: whitesmoke;
+    font-weight: 800;
+    text-decoration: none;
+    align-self: left;
+    padding: 3px;
+}
+
+.navbar a {
+    font-family: Helvetica, sans-serif;
+    font-size: 18px;    
+    color: white;
+    font-weight: 600;
+    text-decoration: underline;
+    margin-left: 4px;
+}
+
+.navbar a:hover {
+    color: rgb(227, 162, 236)   ;
+    font-weight: 600
+}
+#final_anchor {
+    color: blue;
+    font-weight: 200;
+    font-family: Helvetica;
+    margin-left: 150px;
+}
+
+#final_anchor:hover {
+    color: rgb(25, 197, 216);
+    font-weight: 200
+}
+
+/*Definição das cores, bem como as famíias de fontes*/
+
+
+p{
+    color: black;
+    font-family: Helvetica;
+    font-weight: 500;   
+}
+
+th{
+    color: black;
+    font-family: Helvetica;
+    font-weight: 700;
+}
+
+td{
+    color: black;
+    font-family: Helvetica;
+    font-weight: 500;
+}
+
+td a{
+    color: blue;
+    font-weight: 200;
+}
+
+td a:hover{
+    color: rgb(25, 197, 216);
+    font-weight: 200;
+}
+
+li{
+    color: black;   
+    font-family: Helvetica;
+}
+
+li a {
+    color: blue;
+    font-weight: 200;
+}
+
+li a:hover{
+    color: rgb(25, 197, 216);
+    font-weight: 200;
+}
+
+
+/*Títulos e suas formatações */
+
+h1{
+    color:blue;
+}
+
+h2{
+   font-family: Helvetica, sans-serif ;
+   font-weight: 700; 
+    color: blueviolet;
+}
+
+h4{
+    color: brown;
+    font-family: Helvetica, sans-serif;
+}
+
+
+/* Deixar para os últimos ajustes
+@media screen and (max-width: 648px)*/ 
+    
+
+
+
+
+
+
+
+
+
+
+
